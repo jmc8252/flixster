@@ -26,6 +26,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Movies" id="w9O-Rn-RPD"/>
+                    <connections>
+                        <outlet property="tableView" destination="le3-dU-u30" id="blw-CW-ag6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
