@@ -9,10 +9,7 @@ import UIKit
 
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    
-
     @IBOutlet weak var tableView: UITableView!
-    
     
     var movies = [[String:Any]]()
     
@@ -52,12 +49,13 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
                 
         let movie = movies[indexPath.row]
         let title = movie["title"] as! String
         
-        cell.textLabel!.text = title
+        
+        cell.titleLabel.text = title
         
         return cell
     }
