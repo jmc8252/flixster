@@ -53,6 +53,7 @@
                                             <outlet property="posterView" destination="as9-J3-47C" id="9JV-lu-Wza"/>
                                             <outlet property="synopsisLabel" destination="0GN-PA-DLq" id="hcR-IT-Jz0"/>
                                             <outlet property="titleLabel" destination="EcU-T7-ZvZ" id="nSc-bu-5kO"/>
+                                            <segue destination="bUA-wg-B07" kind="show" id="MJH-7X-tcZ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -69,6 +70,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="918.84057971014499" y="64.955357142857139"/>
+        </scene>
+        <!--Movie Details View Controller-->
+        <scene sceneID="L3j-mX-eKa">
+            <objects>
+                <viewController id="bUA-wg-B07" customClass="MovieDetailsViewController" customModule="flixster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CdK-0G-FOL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nNP-Lj-rPd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HRc-P7-0t3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkc-JZ-QH3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1813" y="67"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HSc-ga-qur">
